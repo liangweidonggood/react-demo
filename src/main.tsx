@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import 'uno.css'
 import './styles/index.css'
 import { Provider } from 'react-redux'
-import { store } from './store'
-import App from './App'
+import { store } from '@/store'
+import App from '@/App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

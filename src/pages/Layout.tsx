@@ -1,8 +1,8 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router'
 import { Layout as AntLayout, Menu, Button } from 'antd'
-import { useAppSelector, useAppDispatch } from '../store/hooks'
-import { logout } from '../store/features/auth/authSlice'
+import { useAppSelector, useAppDispatch } from '@/store/hooks'
+import { logout } from '@/store/features/auth/authSlice'
 
 const { Header, Content, Sider } = AntLayout
 

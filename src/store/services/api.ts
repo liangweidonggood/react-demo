@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { API_ENDPOINTS } from '../../constants'
-import type { RouteConfig } from '../../types'
+import { API_ENDPOINTS } from '@/constants'
+import type { RouteConfig } from '@/types'
 
 // 自定义baseQuery，用于模拟API响应
 const mockBaseQuery = (): ReturnType<typeof fetchBaseQuery> => {

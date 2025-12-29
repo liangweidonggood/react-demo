@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { RouterProvider } from 'react-router'
-import { useGetRoutesQuery } from './store/services/api'
-import { createAppRouter } from './routes/routeConfig'
+import { useGetRoutesQuery } from '@/store/services/api'
+import { createAppRouter } from '@/routes/routeConfig'
 import { Spin } from 'antd'
 
 // 异步加载路由的App组件

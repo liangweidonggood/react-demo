@@ -1,10 +1,10 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router'
-import Layout from '../pages/Layout'
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Login from '../pages/Login'
-import ProtectedRoute from '../components/ProtectedRoute'
+import Layout from '@/pages/Layout'
+import Home from '@/pages/Home'
+import About from '@/pages/About'
+import Login from '@/pages/Login'
+import ProtectedRoute from '@/components/ProtectedRoute'
 
 // 创建浏览器路由的函数
 export const createAppRouter = () => {

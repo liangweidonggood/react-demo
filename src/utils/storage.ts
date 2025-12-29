@@ -19,7 +19,7 @@ export const setStorage = <T = unknown>(
     const serializedValue = JSON.stringify(value)
     storage.setItem(key, serializedValue)
   } catch (error) {
-    console.error('存储数据失败:', error)
+    console.error('存储数据失败:', error as Error)
   }
 }
 
@@ -41,7 +41,7 @@ export const getStorage = <T = unknown>(
     }
     return JSON.parse(serializedValue) as T
   } catch (error) {
-    console.error('获取数据失败:', error)
+    console.error('获取数据失败:', error as Error)
     return null
   }
 }
@@ -59,7 +59,7 @@ export const removeStorage = (
     const storage = window[storageType]
     storage.removeItem(key)
   } catch (error) {
-    console.error('移除数据失败:', error)
+    console.error('移除数据失败:', error as Error)
   }
 }
 
@@ -74,6 +74,6 @@ export const clearStorage = (
     const storage = window[storageType]
     storage.clear()
   } catch (error) {
-    console.error('清空存储失败:', error)
+    console.error('清空存储失败:', error as Error)
   }
 }

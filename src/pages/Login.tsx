@@ -2,8 +2,8 @@ import React from 'react'
 import { Form, Input, Button, Card, message } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import { useNavigate, useLocation } from 'react-router'
-import { useLoginMutation } from '../store/services/api'
-import { useAppDispatch } from '../store/hooks'
+import { useLoginMutation } from '@/store/services/api'
+import { useAppDispatch } from '@/store/hooks'
 import {
   loginStart,
   loginSuccess,
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
     } catch (error) {
       dispatch(loginFailure('登录失败'))
       message.error('登录失败，请检查用户名和密码')
-      console.error('Login error:', error)
+      console.error('Login error:', error as Error)
     }
   }
 
